@@ -36,7 +36,7 @@ h3 {
 .row{
   display: block;
 margin:auto;
- Width:98%;
+ Width:100%;
  }
 
 
@@ -62,7 +62,7 @@ margin:auto;
 .box1 img {
     margin-top: -7px;
     width: 100%;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .box2 img {
