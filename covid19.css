@@ -33,6 +33,13 @@ h3 {
 
 }
 
+.row{
+  display: block;
+margin:auto;
+ 
+ }
+
+
 .main {
   position: relative;
   display: block;
