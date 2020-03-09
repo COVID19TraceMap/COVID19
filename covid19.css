@@ -19,7 +19,7 @@ h1 {
 h1 img{
  display:inline-block;
  width:10%;
-  
+ float:left;
 }
 
 h3 {
