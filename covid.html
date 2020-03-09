@@ -1,0 +1,467 @@
+<html>
+
+<head>
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+
+  <style>
+    /*******Body Section*******/
+
+    body {
+      font-family: "lato", san-serif;
+    }
+
+    #contentRow {
+      padding: bottom:35px;
+      background-color: rgba(1, 49, 95, .9);
+    }
+
+    h1 {
+      font-family: "Helventica", Arial, sans-serif;
+      font-size: 3em;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      margin: 8px;
+      border: none !important;
+    }
+
+    /*******Top Button Clusters*******/
+
+    .navi-border {
+      border: 1px solid #000;
+      border-radius: 10px 10px 0 0;
+      background: linear-gradient(to bottom, #71706c 5%, #e3e2db 100%);
+    }
+
+    .btn-previous:link,
+    .btn-next:link,
+    .autoplay:link,
+    .autostop:link {
+      border-color: #000;
+    }
+
+    .btn-previous:visted,
+    .btn-next:visted,
+    .autoplay:visted,
+    .autostop:visited {
+      border-color: #000;
+    }
+
+    .btn-previous:hover,
+    .btn-next:hover,
+    .autoplay:hover,
+    .autostop:hover {
+      transform: scale(1.1);
+      transition: transform .3s;
+      outline: none;
+    }
+
+    .btn-previous {
+      box-shadow: inset 0px 1px 0px 0px #001569;
+      background: linear-gradient(to bottom, #0033ff 5%, #001569 100%);
+      background-color: #0033ff;
+      border-radius: 5px;
+      border: 4px solid #0033ff;
+      display: inline-block;
+      color: #fff !important;
+      padding: 2px 2px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: serif;
+      font-size: 16px !important;
+      font-weight: bold;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #000;
+      margin-left: 8px 25px;
+      width: 80px;
+    }
+
+    .btn-next {
+      box-shadow: inset 0px 0px 1px 1px #001569;
+      background: linear-gradient(to bottom, #0033ff 5%, #001569 100%);
+      background-color: #0033ff;
+      border-radius: 5px;
+      border: 4px solid #0033ff;
+      display: inline-block;
+      color: #fff !important;
+      padding: 2px 2px;
+      border-radius: 6px;
+      border-color: black;
+      display: inline-block;
+      cursor: pointer;
+      font-family: serif;
+      font-size: 16px !important;
+      font-weight: bold;
+      text-decoration: none !important;
+      text-shadow: 0px 1px 0px #000;
+      margin: 8px 100px 8px 25px;
+      width: 80px;
+
+    }
+
+    .autoplay {
+      box-shadow: inset 0px 0px 1px 1px #34531;
+      background: linear-gradient(to bottom, #228b22 5%, #0a3a07 100%);
+      background-color: #345c31;
+      border-radius: 5px border:4px solid #0a3a07;
+      display: inline-block;
+      color: #fff !important;
+      padding: 2px 2px;
+      border-radius: 6px;
+      border-color: black;
+      display: inline-block;
+      cursor: pointer;
+      font-family: serif;
+      font-size: 16px !important;
+      font-weight: bold;
+      text-decoration: none !important;
+      text-shadow: 0px 1px 0px #0a3a07;
+      margin: 0px 0px 0 40px !important;
+      width: 80px;
+    }
+
+    .autostop {
+      box-shadow: inset 0px 0px 1px 1px #34531;
+      background: linear-gradient(to bottom, #8f0606 5%, #cc1a1a 100%);
+      background-color: #cc1a1a;
+      border-radius: 5px border:4px solid #cc1a1a;
+      display: inline-block;
+      color: #fff !important;
+      padding: 2px 2px;
+      border-radius: 6px;
+      border-color: black;
+      display: inline-block;
+      cursor: pointer;
+      font-family: serif;
+      font-size: 16px !important;
+      font-weight: bold;
+      text-decoration: none !important;
+      text-shadow: 0px 1px 0px #0a3a07;
+      margin: 10px 25px;
+      width: 80px;
+    }
+
+    .btn-top {
+      box-shadow: inset 0px 0px 1px 1px gray;
+      background: linear-gradient(to bottom, #fbb200 5%, #f6c54f 100%);
+      background-color: #fff;
+      color: #000 !important;
+      padding: 5px 30px;
+      border-radius: 6px;
+      border-color: black;
+      display: inline-block;
+      cursor: pointer;
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      text-decoration: none !important;
+      margin: 0px 15px;
+
+    }
+
+    .btn-top:hover {
+      transform: scale(1.1);
+      transition: 0.2s;
+      text-decorations: none;
+
+    }
+
+
+    /*******Left Navigation*******/
+    .navi-list {
+      height: 609px;
+      width: 219px;
+      position: absolute;
+      z-index: 0;
+      top: 274px;
+      overflow-x: hidden;
+      padding: 0px 0;
+      margin-top: 0px;
+      border: 1px solid #000;
+      overflow-y: scroll;
+      border-radius: 0 0 0 10px;
+      background-color: #f6e8a3;
+      line-height: 1.5;
+    }
+
+
+
+
+    .navi-list li a {
+      padding: 5px 8px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      color: black;
+      display: block;
+    }
+
+    .red,
+    .navi-list a:focus {
+      background-color: red !important;
+      color: black !important;
+      font-weight: bold;
+    }
+
+    .navi-list a:hover {
+      background-color: blue;
+      color: orange;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+
+
+
+    /******* iframe *******/
+
+    .main {
+      margin-left: 221px;
+      font-size: 28px;
+      position: relative;
+      margin-bottom: 20px;
+      border-radius: 0 0 10px 0px;
+    }
+
+    .ms-rte-embeddialog-preview {
+      display: none;
+    }
+
+    .frame {
+      height: 607px;
+      width: 99.8%;
+      overflow: hidden;
+      border: 1px black solid;
+      border-radius: 0 0 8px 0;
+    }
+
+
+
+    input[type=number] {
+      display: inline-block;
+      border: 1px solid #000;
+      width: 35px;
+      height: 18px;
+      border-radius: 8px;
+      background-color: #eaece8;
+      text-align: center;
+      padding: 5px;
+      margin-left: 5px;
+      font-weight: bold;
+    }
+
+    input[type=number]:focus {
+      background-clor: #fff;
+    }
+
+
+    /*****bottom button clusters***/
+
+    .rfi_list {
+      box-shadow: inset 0px 0px 1px 1px gray;
+
+      background: linear-gradient(to bottom, #ec4204 5%, #073462 100%);
+      background-color: #fff;
+      color: #fff !important;
+      padding: 5px 30px;
+      border-radius: 6px;
+      border-color: black;
+      display: inline-block;
+      cursor: pointer;
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: 30px;
+      text-decoration: none !important;
+
+    }
+
+    .contact_list {
+      box-shadow: inset 0px 0px 1px 1px gray;
+
+      background: linear-gradient(to bottom, #ec4204 5%, #073462 100%);
+      background-color: #fff;
+      color: #fff !important;
+      padding: 5px 30px;
+      border-radius: 6px;
+      border-color: black;
+      display: inline-block;
+      cursor: pointer;
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none !important;
+      margin-left: 30px;
+
+
+    }
+
+    .ew_schedule {
+      box-shadow: inset 0px 0px 1px 1px gray;
+
+      background: linear-gradient(to bottom, #ec4204 5%, #073462 100%);
+      background-color: #fff;
+      color: #fff !important;
+      padding: 5px 30px;
+      border-radius: 6px;
+      border-color: black;
+      display: inline-block;
+      cursor: pointer;
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 30px;
+      text-decoration: none !important;
+    }
+
+    .contact_list:link,
+    .contact_list:visited,
+    .rfi_list:link,
+    .rfi_list:visted,
+    .ew_schedule:link,
+    .ew_schedule:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .contact_list:hover,
+    .rfi_list:hover,
+    .ew_schedule:hover {
+      transform: scale(1.1);
+      transition: transform .3s;
+
+    }
+
+    .btn-bottom {
+      margin-top: 5px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div>
+    <div>
+      <h1>USFK COVID-19 Dashboard</h1>
+    </div>
+    <div class="navi-border">
+      <center>
+        <form>
+
+
+          <input type="button" class="btn-previous" value="Previous" onclick="previous();"></input>
+          <input type="button" class="btn-next" value="Next" onclick="next();"></input>
+          <input type="button" class="autoplay" value="Play"></input>
+          <input type="number" id="#timer" value="60"><span style="color:black;margin:4px;font-weight:bold;font-style:italic;">&nbspSec</span></input>
+          <input type="button" class="autostop" value="Stop" </input>
+
+          <a href="https://conference.apps.mil/webconf/USFKCUOPSWG" class="btn-top" target="_blank">USFK COVID Sync DCS</a>
+          <a href="https://docs.google.com/spreadsheets/d/1OonwTa1T9RdXgbOQNzU7Y_Mlbp2ecrhRgAc4c1SCRyo/edit?usp=sharing" class="btn-top" target="_blank">MOFA Travel Restrictions</a>
+
+    </div>
+    </form>
+    </center>
+
+    <div class="main">
+      <iframe name="content" class="frame" src="https://www.google.com/maps/d/embed?mid=1iX6S9c_0AAJqWSDlqMVxxHBrvd23QEbF"></iframe>
+    </div>
+
+    <div>
+      <ul class="navi-list">
+
+        <li><a href="https://www.google.com/maps/d/embed?mid=1iX6S9c_0AAJqWSDlqMVxxHBrvd23QEbF" target="content">COVID-19 Trace Map</a></li>
+        <li><a href="/cmds/usfk-fkj3/j33/_layouts/15/WopiFrame.aspx?sourcedoc=%2Fcmds%2Fusfk%2Dfkj3%2Fj33%2FCoronavirus%5FUpdates%2F2019%5FCOVID%2D19%5FCDRs%5FUpdate%5FMASTER%2Epptx&action=embedview&wdAr=1.3333333333333332&Embed=1"
+            target="content">Daily COVID-19 UPDATE</a></li>
+        <li><a href="/cmds/usfk-fkj3/j33/_layouts/15/WopiFrame.aspx?sourcedoc=%2Fcmds%2Fusfk%2Dfkj3%2Fj33%2FCoronavirus%5FUpdates%2F2019%5FCOVID%2D19%5FCDRs%5FUpdate%5FMASTER%2Epptx&action=embedview&wdAr=1.3333333333333332&Embed=1&wdSlideID=892"
+            target="content">HPCON Measures</a></li>
+        <li><a href="/cmds/usfk-fkj3/j33/_layouts/15/WopiFrame.aspx?sourcedoc=%2Fcmds%2Fusfk%2Dfkj3%2Fj33%2FCoronavirus%5FUpdates%2F2019%5FCOVID%2D19%5FCDRs%5FUpdate%5FMASTER%2Epptx&action=embedview&wdAr=1.3333333333333332&Embed=1&wdSlideID=879"
+            target="content">HPCON Status</a></li>
+        <li><a href="/cmds/usfk-fkj3/j33/_layouts/15/WopiFrame.aspx?sourcedoc=%2Fcmds%2Fusfk%2Dfkj3%2Fj33%2FCoronavirus%5FUpdates%2F2019%5FCOVID%2D19%5FCDRs%5FUpdate%5FMASTER%2Epptx&action=embedview&wdAr=1.3333333333333332&Embed=1&wdSlideID=485"
+            target="content">Commander Decisions</a></li>
+        <li><a href="/cmds/usfk-fkj3/j33/_layouts/15/xlviewer.aspx?id=%2Fcmds%2Fusfk%2Dfkj3%2Fj33%2FCoronavirus%5FUpdates%2F5%2E%20Trackers%2FUSFK%5FSPOTREPS%2Exlsx&DefaultItemOpen=1&Source=https%3A%2F%2Fpacom%2Edeps%2Emil%2Fcmds%2Fusfk%2Dfkj3%2Fj33%2FCoronavirus%5FUpdates%2FForms%2FAllItems%2Easpx%3FRootFolder%3D%252Fcmds%252Fusfk%252Dfkj3%252Fj33%252FCoronavirus%255FUpdates%252F5%252E%2520Trackers%26FolderCTID%3D0x012000A7F19F4B04626948A034FD1CD6EA4117"
+            target="content">SPOT REPS</a></li>
+        <li><a href="/cmds/usfk-fkj3/j33/Lists/PAO_Update/AllItems.aspx?IsDlg=1" target="content">PAO Update</a></li>
+        <li><a href="/cmds/usfk-fkj3/j33/Lists/Hotspots/FrontpageView.aspx?IsDlg=1" target="content">Hotspots</a></li>
+        <li><a href="/cmds/usfk-fkj3/j33/Lists/Open_Hospitals/FrontpageView.aspx?IsDlg=1" target="content">Hospital Status</a></li>
+        <li><a href="/cmds/usfk-fkj3/j33/Coronavirus_Updates?IsDlg=1" target="content">Document Library</a></li>
+        <li><a href="/cmds/usfk-fkj3/j33/Lists/COVID%20RFI%20Tracker?IsDlg=1" target="content">RFI Tracker </a></li>
+      </ul>
+    </div>
+    <div class="btn-bottom">
+      <center>
+
+        <a href="/cmds/usfk-fkj3/j33/Lists/COVID%20RFI%20Tracker/AllItems.aspx" class="rfi_list" target="_blank">COVID RFI Tracker</a>
+        <a href="/cmds/usfk-fkj3/j33/Coronavirus_Updates/COVID-19%20HPC%20Response%20Contacts%20List.xlsx" class="contact_list">COVID Contact List</a>
+        <a href="/cmds/usfk-fkj3/j33/Coronavirus_Updates/EWT%20Schedule.xlsx" class="ew_schedule">Enhanced Watch Schedule</a>
+      </center>
+
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+
+<script>
+  var play;
+  var i = 0;
+  links = $('.navi-list a').toArray();
+
+  $(document).ready(function() {
+    $(links[i]).addClass('red');
+  });
+
+
+  function next() {
+    $(links[i]).removeClass('red');
+    i++;
+    if (i >= links.length) {
+      i = 0;
+    }
+    $('.frame').attr('src', links[i].href);
+    $(links[i]).addClass('red');
+  };
+
+  function previous() {
+    $(links[i]).removeClass('red');
+    i--;
+    if (i < 0) {
+      i = (links.length) - 1;
+    }
+    $('.frame').attr('src', links[i].href);
+    $(links[i]).addClass('red');
+  };
+
+  $('.list a').click(function() {
+    $(links[i]).removeClass('red');
+    i = links.indexOf(this);
+  });
+
+  $('.autoplay').click(function() {
+        $(links[i]).removeClass('red');
+        clearInterval(play);
+        var sec = document.getElementById('#timer').value;
+        play = setInterval((function() {
+            next();
+          }, (sec * 1000)));
+  console.log(sec);
+        });
+
+      $('.autostop').click(function() {
+        clearInterval(play);
+      });
+
+      $('.btn-previous').click(function() {
+        clearInterval(play);
+      });
+      $('.btn-next').click(function() {
+        clearInterval(play);
+      });
+      $('.navi-list a').click(function() {
+        clearInterval(play);
+      });
+
+</script>
