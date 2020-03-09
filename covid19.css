@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -80,7 +81,9 @@ li a{
 }
 
 .box2 .link{
+    -webkit-box-shadow: inset 0 0 1px 1px grey;
     box-shadow: inset 0 0 1px 1px grey;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #f23340), to(#e3222f));
     background: linear-gradient(to bottom, #f23340 5%, #e3222f 100%);
     background-color: #fff;
 
@@ -95,7 +98,9 @@ li a{
 }
 
 .box2 .link{
+    -webkit-box-shadow: inset 0 0 1px 1px grey;
     box-shadow: inset 0 0 1px 1px grey;
+    background: -webkit-gradient(linear,left top, left bottom,color-stop(5%, #a86b32), to(#d17a28));
     background: linear-gradient(to bottom,#a86b32 5%, #d17a28 100%);
     background-color: #fff;
 
@@ -111,9 +116,17 @@ li a{
 
 .box2 li:hover{
 
+     -webkit-transform: scale(1.1);
+
      transform: scale(1.1);
 
+     -webkit-transition: -webkit-transform .2s;
+
+     transition: -webkit-transform .2s;
+
      transition: transform .2s;
+
+     transition: transform .2s, -webkit-transform .2s;
 
      outline: none;
 
