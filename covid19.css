@@ -28,7 +28,7 @@ h3 {
   padding: 5px 20px ;
   display:block;
   margin:auto;
-  width:95%;
+  width:98%;
 
 
 }
@@ -82,9 +82,6 @@ li a{
 }
 
 
-.box2 {
-    Width:95%;
-}
 
 .box2 .link{
     -webkit-box-shadow: inset 0 0 1px 1px grey;
@@ -97,7 +94,7 @@ li a{
     font-family: Arial;
     font-size: 15px;
     font-weight: bold;
-    width:90%;
+    width:95%;
     margin-top: 9px !important;
 }
 
