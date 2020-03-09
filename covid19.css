@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -13,6 +12,7 @@ h1 {
   color: white;
   background-color: blue;
   border-radius: 10px 10px 0 0;
+  font-size: 2.5rem;
 }
 
 
@@ -52,8 +52,7 @@ h3 {
 
 .box1 img {
     margin-top: -7px;
-    width: 98.3%;
-
+    width: 100%;
     margin-left: 5px;
 }
 
@@ -61,7 +60,7 @@ h3 {
       margin:auto;
 }
 
-.box2 li {
+.box2  li{
   display: block;
   margin: auto;
 }
@@ -82,15 +81,11 @@ li a{
 
 
 .box2 .link{
-    -webkit-box-shadow: inset 0 0 1px 1px grey;
     box-shadow: inset 0 0 1px 1px grey;
-    background: -webkit-gradient(linear,left top, left bottom,color-stop(5%, #a86b32), to(#d17a28));
     background: linear-gradient(to bottom,#a86b32 5%, #d17a28 100%);
     background-color: #fff;
-
     padding: 4px 8px;
     border-radius: 6px;
-
     font-family: Arial;
     font-size: 16px;
     font-weight: bold;
@@ -98,19 +93,11 @@ li a{
     margin-top: 10px !important;
 }
 
-.box2 li:hover{
+.link:hover{
 
-     -webkit-transform: scale(1.2);
+     transform: scale(1.2);
 
-     transform: scale(1.1);
-
-     -webkit-transition: -webkit-transform .2s;
-
-     transition: -webkit-transform .2s;
-
-     transition: transform .2s;
-
-     transition: transform .2s, -webkit-transform .2s;
+     transition: transform .3s;
 
      outline: none;
 
