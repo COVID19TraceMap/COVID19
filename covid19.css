@@ -82,6 +82,10 @@ li a{
 }
 
 
+.box2 {
+    Width:95%;
+}
+
 .box2 .link{
     -webkit-box-shadow: inset 0 0 1px 1px grey;
     box-shadow: inset 0 0 1px 1px grey;
