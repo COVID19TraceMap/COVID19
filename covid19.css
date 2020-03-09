@@ -16,7 +16,11 @@ h1 {
   font-size: 2.5rem;
 }
 
-
+h1 img{
+ display:inline-block;
+ width:10%;
+  
+}
 
 h3 {
   font-family: "Helventica", Arial, sans-serif;
