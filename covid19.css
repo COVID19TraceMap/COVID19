@@ -88,11 +88,10 @@ h3 {
 }
 
 .box3{
-   position: relative;
+  position: relative;
   display: block;
   min-height: 50vh;
-  font-size: 28px;
-  margin-top: 9px !important;
+  margin-top: 15px !important;
   border-color: blue;
   border-width: 1px;
   border-style: solid;
