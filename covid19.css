@@ -87,10 +87,10 @@ h3 {
     margin-top: 9px !important;
 }
 
-.twitter-timeline{
+.twitter-timeline .box3{
   position: relative;
   display: block;
-  height: 20rem;
+  height: 30rem;
   margin-top: 15px !important;
   border-color: blue;
   border-width: 1px;
