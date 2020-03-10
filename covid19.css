@@ -87,16 +87,6 @@ h3 {
     margin-top: 9px !important;
 }
 
-.twitter-timeline, .box3{
-  position: relative;
-  display: block;
-  height: 15rem;
-  margin-top: 15px !important;
-  border-color: blue;
-  border-width: 1px;
-  border-style: solid;
-    
-}
 
 .link a{
   display: inline-block;
