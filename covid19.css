@@ -51,11 +51,12 @@ margin:auto;
   border-style: solid;
 }
 
-.twitter-timeline {
+.twitter {
   position: relative;
   display: block;
   float:left;
   min-height: 40vh;
+  width:50%;
   margin: -5px 5px 0 5px;
   border-color: blue;
   border-width: 1px;
