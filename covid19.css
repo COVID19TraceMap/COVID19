@@ -63,7 +63,7 @@ margin:auto;
 .twitter-timeline {
   position: relative;
   display: block;
-  min-height: 50vh;
+  max-height: 50vh;
   margin: -5px 5px 0 5px;
   border-color: blue;
   border-width: 4px;
