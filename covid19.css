@@ -13,7 +13,8 @@ h1 {
   color: white;
   background-color: blue;
   border-radius: 10px 10px 0 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
+    padding:2px;
 }
 
 
