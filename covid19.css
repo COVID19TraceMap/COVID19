@@ -61,6 +61,7 @@ margin:auto;
 
 .box1 img {
    margin:auto;
+   margin-left:2px;
 }
 
 .box2 img {
@@ -82,9 +83,7 @@ margin:auto;
     padding: 9px 8px;
     border-radius: 6px;
     font-family: Arial;
-    font-size: 15px;
     font-weight: bold;
-    width:90%;
     margin-top: 9px !important;
 }
 
