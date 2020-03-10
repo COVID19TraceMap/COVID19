@@ -1,121 +1,71 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-h1 {
-  font-family: "Helventica", Arial, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  margin: 5px;
-  color: white;
-  background-color: blue;
-  border-radius: 10px 10px 0 0;
-  font-size: 2rem;
-}
+<!DOCTYPE html>
+<html>
 
 
-h3 {
-  font-family: "Helventica", Arial, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  color: white;
-  background-color: blue;
-  border-radius: 10px;
-  padding: 5px 20px ;
-  display:block;
-  margin:auto;
-  width:91%;
-  margin-top:-5px;
+<head>
+  <title>COVID 19 Trace Map</title>
+  <meta charset="utf-8">
+  <title>COVID-19</title>
+  <link rel="stylesheet" href="ionicons.min.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="covid19.css">
 
 
-}
+</head>
 
+<body>
+  <div class="row">
 
+    <h1>USFK COVID-19 Trace Map</h1>
+  </div>
+  <div class="row">
+    <div class="main">
+      <center><iframe class="frame" src="https://www.google.com/maps/d/embed?mid=1iX6S9c_0AAJqWSDlqMVxxHBrvd23QEbF&z=8"></iframe></center>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col .span-1-of-2 box1">
+      <div class="legend">
+        <img src="images/Legend.png" alt="legend">
+      </div>
+    </div>
+    <div class="col .span-1-of-2 box2">
+      <ul>
+        <li>
+          <h3>Helpful Links</h3>
+        </li>
 
-.main {
-  position: relative;
-  display: block;
-  min-height: 50vh;
-  font-size: 28px;
-  margin: -5px 5px 0 5px;
-  border-color: blue;
-  border-width: 4px;
-  border-style: solid;
-}
+        <li class="link"><img src="images/fb.png"><a href="https://www.facebook.com/usaghumphreys/" target="_blank">USAG Humphreys</a></button>  </li>
+        <li class="link"><img src="images/fb.png"><a href="https://www.facebook.com/USAGDaegu/" target="_blank">USAG Daegu</a></li>
+        <li class="link"><img src="images/fb.png"><a href="https://www.facebook.com/usagyongsan/" target="_blank">USAG Yongsan</a></li>
+       <li class="link"><img src="images/tri_logo.png"><a href="https://www.usfk.mil/" target="_blank">USFK.MIL (Public Site)</a></li>
+        <li class="link"><a href="https://www.usfk.mil/Media/Speeches-Transcripts/Article/2077219/usfk-self-quarantine-frequently-asked-questions/" target="_blank">USFK Self-Quarantine Frequently Asked Questions (USFK FAQs)</a></li>
+        <li class="link"><a href="http://www.cdc.go.kr/board.es?mid=a30402000000&bid=0030" target="_blank">Korea Centers for Disease Control and Prevention (KCDC) </a></li>
+        <li class="link"><a href="https://kr.usembassy.gov/022420-covid-19-information/" target="_blank">U.S. Embassy Seoul COVID-19 Travel Alerts and Information</a></li>
+        <li class="link"><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">U.S. Centers for Disease Control and Prevention (CDC)</a></li>
+        <li class="link"><a href="https://www.defense.gov/Explore/Spotlight/Coronavirus/" target="_blank">Coronavirus: DoD Response</a></li>
+        <li class="link"><a href="http://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target="_blank">Jonhs Hopkins Interactive Display Map and Demographics</a></li>
 
-
-
-
-.frame {
-  display: block;
-  min-height: 50vh;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-
-
-.box1 img {
-   margin:auto;
-   margin-left:5px;
-}
-
-.box2 img {
-      margin:auto;
-}
-
-.box2  li{
-  display: block;
-  margin: auto;
-  margin-top:3px;
-}
-
-.box2 .link{
-    -webkit-box-shadow: inset 0 0 1px 1px grey;
-    box-shadow: inset 0 0 1px 1px grey;
-    background: -webkit-gradient(linear,left top, left bottom,color-stop(5%, #f7c56a), to(#c4a366));
-    background: linear-gradient(to bottom,#f7c56a 5%, #c4a366 100%);
-    background-color: #fff;
-    padding: 9px 8px;
-    border-radius: 6px;
-    font-family: Arial;
-    font-weight: bold;
-    margin-top: 9px !important;
-}
-
-
-.link a{
-  display: inline-block;
-  list-style: none;
-text-decoration: none !important;
-  margin-left: 7px;
-  margin-top: -5px !important;
-}
-
- .link a:link, .link a:visited{
-     color:black;
-   }
-
-.link:hover{
-
-     -webkit-transform: scale(1.2);
-
-     transform: scale(1.2);
-
-     -webkit-transition: -webkit-transform .3s;
-
-     transition: -webkit-transform .3s;
-
-     transition: transform .3s;
-
-     transition: transform .3s, -webkit-transform .3s;
-
-     outline: none;
-
-   }
-
+      </ul>
  
+    </div>
+  </div>
+
+<div class="row">
+    <div class="twitter">
+      <center><a class="twitter-timeline" data-width="80%" data-height="600" data-theme="light" href="https://twitter.com/USForcesKorea?ref_src=twsrc%5Etfw">Tweets by USForcesKorea</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+    </div>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160078030-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-160078030-1');
+</script>
+
+</body>
+
+</html>
