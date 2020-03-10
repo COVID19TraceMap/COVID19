@@ -60,15 +60,6 @@ margin:auto;
 }
 
 
-.twitter-timeline {
-  position: relative;
-  display: block;
-  max-height: 50vh;
-  margin: -5px 5px 0 5px;
-  border-color: blue;
-  border-width: 4px;
-  border-style: solid;
-}
 
 .box1 img {
    margin:auto;
