@@ -51,18 +51,7 @@ margin:auto;
   border-style: solid;
 }
 
-.twitter-timeline {
-  position: relative;
-  display: block;
-  float:left;
-  min-height: 50vh;
-  width:50%;
-  margin: -5px 5px 0 5px;
-  border-style:solid;
-  border-width:1px;
-  border-color:black;
- 
-}
+
 .frame {
   display: block;
   min-height: 50vh;
