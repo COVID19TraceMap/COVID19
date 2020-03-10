@@ -95,7 +95,7 @@ h3 {
 
 .twitter{
     border-style:ridge;
-    width:90%;
+    width:98%;
     margin:auto;
     margin-top:15px;
     border-width:6px;
@@ -119,9 +119,9 @@ text-decoration: none !important;
 
 .link:hover{
 
-     -webkit-transform: scale(1.2);
+     -webkit-transform: scale(1.1);
 
-     transform: scale(1.2);
+     transform: scale(1.1);
 
      -webkit-transition: -webkit-transform .3s;
 
