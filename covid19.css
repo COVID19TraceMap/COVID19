@@ -78,13 +78,8 @@ margin:auto;
   margin: auto;
 }
 
-
-.link a{
-  display: inline-block;
-  list-style: none;
-text-decoration: none !important;
-  margin-left: 7px;
-  margin-top: -5px !important;
+.box2{
+ width:49%;  
 }
 
 
@@ -104,6 +99,19 @@ text-decoration: none !important;
     margin-top: 9px !important;
 }
 
+
+.link a{
+  display: inline-block;
+  list-style: none;
+text-decoration: none !important;
+  margin-left: 7px;
+  margin-top: -5px !important;
+}
+
+ .link a:link, .link a:visited{
+     color:black;
+   }
+
 .link:hover{
 
      -webkit-transform: scale(1.2);
@@ -122,6 +130,4 @@ text-decoration: none !important;
 
    }
 
-  .link a:link, .link a:visited{
-     color:black;
-   }
+ 
