@@ -46,17 +46,7 @@ h3 {
   border-style: solid;
 }
 
-.box3{
-   position: relative;
-  display: block;
-  min-height: 50vh;
-  font-size: 28px;
-  margin: 5px 0;
-  border-color: blue;
-  border-width: 1px;
-  border-style: solid;
-    
-}
+
 
 
 .frame {
@@ -97,7 +87,17 @@ h3 {
     margin-top: 9px !important;
 }
 
-
+.box3{
+   position: relative;
+  display: block;
+  min-height: 50vh;
+  font-size: 28px;
+  margin-top: 9px !important;
+  border-color: blue;
+  border-width: 1px;
+  border-style: solid;
+    
+}
 
 .link a{
   display: inline-block;
