@@ -16,11 +16,6 @@ h1 {
   font-size: 2.5rem;
 }
 
-h1 img{
- display:inline-block;
- width:3%;
- float:left;
-}
 
 h3 {
   font-family: "Helventica", Arial, sans-serif;
@@ -65,9 +60,7 @@ margin:auto;
 }
 
 .box1 img {
-    margin-top: -2px;
-    width: 98.4%;
-    margin-left: 5px;
+   margin:auto;
 }
 
 .box2 img {
