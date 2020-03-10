@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="ionicons.min.css">
   <link rel="stylesheet" href="grid.css">
   <link rel="stylesheet" href="covid19.css">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 
@@ -47,7 +47,7 @@
         <li class="link"><a href="http://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target="_blank">Jonhs Hopkins Interactive Display Map and Demographics</a></li>
 
       </ul>
- 
+
     </div>
   </div>
 
@@ -55,10 +55,13 @@
     <div class="twitter">
       <center><a class="twitter-timeline" data-height="900" data-theme="light" href="https://twitter.com/USForcesKorea?ref_src=twsrc%5Etfw">Tweets by USForcesKorea</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
     </div>
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160078030-1"></script>
 <script>
+$(".link").slideUp(1000);
+$(".link").slideDown(2000);
+
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
