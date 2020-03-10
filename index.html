@@ -23,15 +23,6 @@
       <center><iframe class="frame" src="https://www.google.com/maps/d/embed?mid=1iX6S9c_0AAJqWSDlqMVxxHBrvd23QEbF&z=8&ll=36.65192750329507%2C127.72995271398531"></iframe></center>
     </div>
   </div>
-    <div id="dialog" title="Alert message" style="display: none">
-            <div class="ui-dialog-content ui-widget-content">
-                <p>                   
-                    <label id="lblMessage">
-                    </label>
-                </p>
-            </div>
-        </div>
-  
   <div class="row">
     <div class="col .span-1-of-2 box1">
       <div class="legend">
@@ -70,61 +61,7 @@
 <script>
 $(".link").slideUp(2000);
 $(".link").slideDown(2000);
-  
-  
-$(document).ready(function ShowCustomDialog()
-			{
-                
-			ShowDialogBox('Warning',' If you were at one of the Hotspot locations on the same day and around the same time that is published on this site, and especially if you are having symptoms, please call the USFK COVID-19 Hotline at 0533-37-2556.','Ok','', 'GoToAssetList',null);
-			})
-
-            function ShowDialogBox(title, content, btn1text, btn2text, functionText, parameterList) {
-                var btn1css;
-                var btn2css;
-
-                if (btn1text == '') {
-                    btn1css = "hidecss";
-                } else {
-                    btn1css = "showcss";
-                }
-
-                if (btn2text == '') {
-                    btn2css = "hidecss";
-                } else {
-                    btn2css = "showcss";
-                }
-                $("#lblMessage").html(content);
-
-                $("#dialog").dialog({
-                    resizable: false,
-                    title: title,
-                    modal: true,
-                    width: '420px',
-                    height: 'auto',
-                    bgiframe: false,
-                    hide: { effect: 'scale', duration: 400 },
-
-                    buttons: [
-                                    {
-                                        text: btn1text,
-                                        "class": btn1css,
-                                        click: function () {
-                                                                                    
-                                            $("#dialog").dialog('close');
-
-                                        }
-                                    },
-                                    {
-                                        text: btn2text,
-                                        "class": btn2css,
-                                        click: function () {
-                                            $("#dialog").dialog('close');
-                                        }
-                                    }
-                                ]
-                });
-            }  
-  
+alert('If you were at one of the Hotspot locations on the same day and around the same time that is published on this site, and especially if you are having symptoms, please call the USFK COVID-19 Hotline at 0533-37-2556.');
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
