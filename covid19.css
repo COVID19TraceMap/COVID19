@@ -87,11 +87,12 @@ h3 {
     background: -webkit-gradient(linear,left top, left bottom,color-stop(5%, #f7c56a), to(#c4a366));
     background: linear-gradient(to bottom,#f7c56a 5%, #c4a366 100%);
     background-color: #fff;
-    padding: 10px 8px;
+    padding: 8.7px 7px;
     border-radius: 15px;
     font-family: Arial;
     font-weight: bold;
     margin-top: 9px !important;
+    width:100%;
 }
 
 
