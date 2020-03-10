@@ -70,6 +70,7 @@ margin:auto;
 .box2  li{
   display: block;
   margin: auto;
+  margin-top:3px;
 }
 
 .box2 .link{
