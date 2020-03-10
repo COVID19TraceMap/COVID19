@@ -24,8 +24,8 @@ h3 {
   text-align: center;
   color: white;
   background-color: blue;
-  border-radius: 10px;
-  padding: 5px 20px ;
+  border-radius: 5px;
+  padding: 8px 20px ;
   display:block;
   margin:auto;
   width:100%;
@@ -67,6 +67,7 @@ h3 {
   border: 3px solid black;
   padding: 2px;
   margin-left:5px;
+  
 
 }
 
@@ -86,8 +87,8 @@ h3 {
     background: -webkit-gradient(linear,left top, left bottom,color-stop(5%, #f7c56a), to(#c4a366));
     background: linear-gradient(to bottom,#f7c56a 5%, #c4a366 100%);
     background-color: #fff;
-    padding: 9px 8px;
-    border-radius: 6px;
+    padding: 10px 8px;
+    border-radius: 15px;
     font-family: Arial;
     font-weight: bold;
     margin-top: 9px !important;
@@ -98,8 +99,8 @@ h3 {
     border-style:ridge;
     width:98%;
     margin:auto;
-    margin-top:15px;
-    border-width:6px;
+    margin-top:7px;
+    border-width:4px;
     border-color:#00acee;
     border-radius:10px;
      
